@@ -1,0 +1,3 @@
+OneWire library for Arduino using internal pull-up resistor.
+
+Looking up an DS18B20 temperature sensor, I plugged in the one wire (plus ground and power). My sensors did not work without external resistors. I was not using parasitic power and wondered if the internal pull-up resistor would work. I made a few changes (6 lines) to turn on the internal pull-up after every read access to the OneWire pin. It seems to work just fine.
